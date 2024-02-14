@@ -1,0 +1,84 @@
+/* Styles for the product cards */  
+.card {  
+    margin-bottom: 20px; /* Adds spacing between cards */  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around cards */  
+    transition: transform 0.2s; /* Smooth transition for hover effect */  
+  }  
+    
+  .card:hover {  
+    transform: scale(1.05); /* Slightly enlarges the card on hover */  
+  }  
+    
+  .card-img-top {  
+    width: 100%; /* Ensures the image covers the width */  
+    height: 200px; /* Sets a fixed height for uniformity */  
+    object-fit: cover; /* Ensures the image covers the area without stretching */  
+  }  
+    
+  .card-body {  
+    padding: 15px; /* Adds spacing inside the card */  
+  }  
+    
+  .card-title {  
+    margin-bottom: 15px; /* Adds spacing below the title */  
+  }  
+    
+  .card-text {  
+    margin-bottom: 10px; /* Adds spacing below each paragraph */  
+  }  
+    
+  /* Styles for the "View Details" button */  
+  .btn-primary {  
+    background-color: #007bff; /* Primary button color */  
+    border-color: #007bff; /* Border matches the background */  
+  }  
+    
+  .btn-primary:hover {  
+    background-color: #0056b3; /* Darker shade on hover */  
+    border-color: #004080; /* Border matches the hover background */  
+  }  
+    
+  /* Additional styling for the no products template */  
+  .text-muted {  
+    font-style: italic; /* Adds emphasis to the no products message */  
+  }  /* styles.css or navbar.component.css */  
+  .navbar {  
+    background-color: #333;  
+    color: white;  
+    display: flex;  
+    justify-content: space-between;  
+    padding: 1rem;  
+  }  
+    
+  .nav-brand {  
+    font-weight: bold;  
+  }  
+    
+  .nav-links {  
+    list-style: none;  
+    display: flex;  
+    gap: 1rem;  
+  }  
+    
+  .nav-links a {  
+    color: white;  
+    text-decoration: none;  
+  }  
+    
+  .nav-links a:hover, .nav-links a.active {  
+    border-bottom: 2px solid #007bff;  
+  }  
+    
+  /* Adjustments for mobile view */  
+  @media (max-width: 768px) {  
+    .nav-links {  
+      display: none;  
+    }  
+    
+    .nav-links.show {  
+      display: flex;  
+      flex-direction: column;  
+    }  
+  }  
+  
+  

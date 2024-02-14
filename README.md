@@ -1,27 +1,36 @@
 # ProductInfo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+# ProductInfo Angular Project  
+  
+`ProductInfo` is an Angular-based web application designed to showcase a catalog of products. This application features a rich, user-friendly interface with several key pages: Home, Contact, Products, and Product Detail. Each page is designed with a modern aesthetic in mind, ensuring a seamless and engaging user experience.  
+  
+## Prerequisites  
+  
+Before you begin, ensure you have the following installed on your system:  
+  
+- **Node.js and npm**: Node.js 10.13 or later, though the latest version is recommended. npm is included with Node.js. You can download them from [Node.js official website](https://nodejs.org/).  
+  
+- **Angular CLI**: After installing Node.js and npm, you can install the Angular CLI globally by running:  
+  ```bash  
+  npm install -g @angular/cli  
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Installation
+ 
+To set up the ProductInfo project locally, follow these steps:
+1. Clone the repository: Obtain the code by cloning the project repository. Use the command:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+        git clone https://prabhatamit3/angular-product-website.git 
 
-## Build
+2. Navigate to the project directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+        cd productInfo  
+ 
+3. Install dependencies: Install the project's required dependencies by running:
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm install  
+ 
