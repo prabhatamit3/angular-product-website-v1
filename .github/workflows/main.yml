@@ -28,4 +28,4 @@ jobs:
       with:  
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
         BRANCH: gh-pages  # The branch the action should deploy to.  
-        FOLDER: dist/angular-product-website-v1  # The folder the action should deploy.  
+        FOLDER: dist/product-info  # The folder the action should deploy.  
