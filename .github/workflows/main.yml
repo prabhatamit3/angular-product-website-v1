@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages  
+
+on:  
+  push:  
+    branches:  
+      - main  # Set to your default branch  
+
+jobs:  
+  build-and-deploy:  
+    runs-on: ubuntu-latest  
+
+    steps:  
+    - uses: actions/checkout@v2  
+
+    - name: Use Node.js  
+      uses: actions/setup-node@v1  
+      with:  
+        node-version: '14'  # Set to your preferred Node.js version  
+
+    - name: Install dependencies  
+      run: npm install  
+
+    - name: Build project  
+      run: npm run build -- --prod --base-href="https://prabhatamit3.github.io/angular-product-website-v1/"  
+
+    - name: Deploy to GitHub Pages  
+      uses: JamesIves/github-pages-deploy-action@releases/v3  
+      with:  
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        BRANCH: gh-pages  # The branch the action should deploy to.  
+        FOLDER: dist/angular-product-website-v1  # The folder the action should deploy.  
